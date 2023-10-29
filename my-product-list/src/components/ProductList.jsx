@@ -16,7 +16,7 @@ const ProductList = () => {
     setFilteredProducts(productData.slice(0, showCount));
   }, []);
 
-  // Add your filtering and search logic here
+  // should filtering and search logic here
 
   const handleScroll = () => {
     const container = containerRef.current;
