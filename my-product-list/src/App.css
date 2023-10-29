@@ -59,3 +59,11 @@
   width: 100%;
   clear: both;
 }
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Style for individual buttons */
+

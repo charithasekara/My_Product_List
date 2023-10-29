@@ -9,7 +9,7 @@ const Product = ({ product }) => {
       setImageIndex((prevIndex) => (prevIndex + 1) % product.images.length);
     };
 
-    const intervalId = setInterval(updateImageIndex, 2000);
+    const intervalId = setInterval(updateImageIndex, 3000);
 
     return () => {
       clearInterval(intervalId);
@@ -18,11 +18,16 @@ const Product = ({ product }) => {
 
   return (
     <div className="product">
-     <img src={`/assets/${product.images[imageIndex]}`} alt={product.name} />
+      <img src={`/assets/${product.images[imageIndex]}`} alt={product.name} />
       <h3>{product.name}</h3>
       <p>${product.price}</p>
-      <button>Add to Cart</button>
-      <button>Add to Favorites</button>
+      <div className='button-up'>
+      <button>Pay</button>
+        <button>Cash</button>
+        <button>Card</button>
+        <button>Credit</button>
+      </div>
+      
     </div>
   );
 };
