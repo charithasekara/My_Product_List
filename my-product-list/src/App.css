@@ -24,6 +24,12 @@
   object-fit: contain; /* Preserve the image's aspect ratio */
 }
 
+/* Add a hover effect to the product container */
+.product:hover img {
+  transform: scale(1.1); /* Scale the image when hovered */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
 /* Style for the product name */
 .product h3 {
   font-size: 18px;
